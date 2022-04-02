@@ -7,37 +7,24 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
-.main-img {
-    background-size: contain;
+/* .main-img {
+    object-fit: cover;
     max-width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: -25;
-}
+} */
 
 .header {
     background-color: azure;
-    max-height: 170px;
+    /* min-height: 170px; */
 }
 
 .head {
     display: flex;
-    justify-content: space-between;
-    padding: 30px;
-}
-
-.contact {
-    display: flex;
-    align-items: center;
-}
-
-.contact>* {
-    margin-left: 5px;
-}
-
-.vk {
-    margin: 0px;
+    justify-content: center;
+    padding: 20px 0;
 }
 
 .main-header {
@@ -47,14 +34,90 @@ body {
 
 }
 
-.inf {
+header hr {
+    border: 1px solid rgba(165, 165, 165, 0.068);
+    background-color: rgba(146, 146, 146, 0.5);
+    width: 85%;
+}
+
+.inform-table {
     display: flex;
-    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.inform-items {
+    font-size: 1.3rem;
+    padding: 5px 10px;
+}
+
+.inform-items-1 {}
+
+.main-wrapper {
+    background-size: cover;
+    background-image: url(img/creation-of-concept-4k-uc-3840x2400.jpg);
+}
+
+.grey-filter {
+    background-color: rgba(0, 0, 0, 0.342);
+    justify-content: center;
+    display: flex;
 }
 
 .main {
-    min-height: 650px;
-    background-color: rgba(27, 27, 27, 0.24);
+    /* display: flex;
+    flex-flow: row wrap; */
+    text-shadow: rgba(44, 2, 14, 0.596) 1px 0 10px;
+}
+
+main h1 {
+    margin: 0 0 15px 0;
+    font-size: 4rem;
+    max-width: 600px;
+    color: white;
+}
+
+.main-item-1 {
+    flex: 1 100%;
+    margin: 50px;
+}
+
+.main-text {
+    max-width: 500px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.main-button {
+    background-color: rgb(140, 91, 255);
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    color: azure;
+    font-size: 1.1rem;
+    margin: 15px 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.main-item-2 {
+    flex: 1 100%;
+    margin: 50px;
+    font-size: 1.3rem;
+}
+
+.main-inf {
+    color: white;
+    padding: 15px;
+}
+
+@media all and (min-width: 800px) {
+    .main {
+        display: flex;
+    }
+
+    .main-item-1 {}
+
+    .main-item-2 {}
+
 }
 
 .wrapper {
@@ -113,7 +176,7 @@ a {
 }
 
 .article-product {
-    min-width: 250px;
+    max-width: 600px;
     display: flex;
     align-items: end;
 }
@@ -123,7 +186,7 @@ a {
     /* background-color: rgba(223, 146, 125, 0.514); */
     background-color: rgba(139, 98, 233, 0.514);
     padding: 10px 0 10px 10px;
-    min-height: 200px;
+    min-height: 250px;
     border-radius: 5px;
 }
 
@@ -132,10 +195,95 @@ h3:hover {
     text-shadow: 0px 0px 15px rgba(201, 163, 163, 0.91);
 }
 
+.product-img {
+    max-width: 98%;
+    height: 250px;
+    background-size: cover;
+}
+
+.product-img1 {
+    background-image: url(product-img/1.jpg);
+}
+
+.product-img2 {
+    background-image: url(product-img/2.jpg);
+}
+
+.product-img3 {
+    background-image: url(product-img/3.jpg);
+    background-position: left 0 top -130px;
+}
+
+.product-img4 {
+    background-image: url(product-img/4.jpg);
+}
+
+.product-img5 {
+    background-image: url(product-img/5.jpg);
+}
+
+.product-img6 {
+    background-image: url(product-img/6.jpg);
+}
+
+.product-img7 {
+    background-image: url(product-img/7.jpg);
+}
+
+.product-img8 {
+    background-image: url(product-img/8.jpg);
+}
+
+.product-img9 {
+    background-image: url(product-img/9.jpg);
+}
+
+.product-img10 {
+    background-image: url(product-img/10.jpg);
+}
+
+.product-img11 {
+    background-image: url(product-img/11.jpg);
+}
+
+.product-img12 {
+    background-image: url(product-img/12.jpg);
+}
+
+.product-img13 {
+    background-image: url(product-img/13.jpg);
+}
+
+.product-img14 {
+    background-image: url(product-img/14.jpg);
+    background-position: center;
+}
+
+.product-img15 {
+    background-image: url(product-img/15.jpg);
+}
+
+.product-img16 {
+    background-image: url(product-img/16.jpg);
+}
+
+.product-img17 {
+    background-image: url(product-img/17.jpg);
+}
+
+.product-img18 {
+    background-image: url(product-img/18.jpg);
+}
+
+.product-img19 {
+    background-image: url(product-img/19.jpg);
+}
+
 .teachers {
     font-size: 1.3rem;
     max-width: 1000px;
     margin: auto;
+    padding: 10px;
 }
 
 .teachers-h3 {
@@ -156,42 +304,18 @@ h3:hover {
     .article-product {
         flex: 1;
     }
+
 }
 
 /* Медиа запрос для экрана Компьютера */
 @media all and (min-width: 900px) {
-    .main-article {}
 
     .article-product {
         flex-grow: 2;
     }
 
-    /* .article-product-1 {
-        order: 1;
-    }
-
-    .article-product-2 {
-        order: 2;
-    }
-
-    .article-product-3 {
-        order: 3;
-    }
-
-    .article-product-4 {
-        order: 4;
-    }
-
-    .article-product-5 {
-        order: 5;
-    }
-
-    .article-product-6 {
-        order: 6;
-    } */
-
     .teachers {
-        order: 7;
+        order: 7;   
     }
 
     .footer {
